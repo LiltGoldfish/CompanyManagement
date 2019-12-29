@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		
+		<link rel="stylesheet" href="css/amazeui.min.css">
+		<link rel="stylesheet" href="css/admin.css">
+		<link rel="stylesheet"  href="css/app.css">
+		<style>
+			.admin-main{
+				padding-top: 0px;
+			}
+		</style>
+	</head>
+	<body>
+		
+		<div class="am-cf admin-main">
+			<!-- content start -->
+			<div class="admin-content">
+				<div class="admin-content-body">
+					<div class="am-g">
+						<form class="am-form am-form-horizontal" action="addReport_ok.php" method="post" >
+							<input value="504" name="roleId" type="hidden">
+							
+							<div class="am-form-group">
+								<label for="user-name" class="am-u-sm-3 am-form-label">
+									填写日期
+								</label>
+								<div class=" " style="position: absolute;right: 130px;top:7px;">
+									<input name="date" type="date" value="2018-06-02" style="height: 20px;width: 226px;"/>
+								</div>
+							</div>
+
+							<div class="am-form-group">
+								<label for="user-name" class="am-u-sm-3 am-form-label">
+									填写业绩报告
+								</label>
+								<div class=" " style="position: absolute;right: 80px;top:60px;">
+									<textarea name="content" cols="30" rows="8" required="" placeholder="填写业绩报告" value=""  type="text" ></textarea>
+				
+								</div>
+							</div>
+							<div class="am-form-group">
+								<div class="" style="position: absolute; left:130px;top:256px;">
+								    <input type="hidden" name="action" value="insert">
+									<input id="addRole" class="am-btn am-btn-success" value="添加业绩报告" type="submit">
+								    <input class="am-btn am-btn-success"  type="reset" name="reset" value="重置">
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

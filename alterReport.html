@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		
+		<link rel="stylesheet" href="css/amazeui.min.css">
+		<link rel="stylesheet" href="css/admin.css">
+		<link rel="stylesheet" href="css/app.css">
+		<style>
+			.admin-main{
+				padding-top: 0px;
+			}
+		</style>
+	</head>
+	<body>
+		
+		<div class="am-cf admin-main">
+			<!-- content start -->
+			<div class="admin-content">
+				<div class="admin-content-body">
+					<div class="am-g">
+						<form class="am-form am-form-horizontal" action="alterReport.php" method="post" >
+							<input value="504" name="roleId" type="hidden">
+							<div class="am-form-group">
+								<label for="user-name" class="am-u-sm-3 am-form-label">
+									修改编号
+								</label>
+								<div class=" " style="position: absolute;right: 180px;top:7px;">
+									<input id="id" placeholder="确认修改编号" value="" name="id" type="text">
+								</div>
+							</div>
+							<div class="am-form-group">
+								<label for="user-name" class="am-u-sm-3 am-form-label">
+									修改日期
+								</label>
+								<div class=" " style="position: absolute;right: 180px;top:57px;">
+									<input id="date" placeholder="输入修改日期" value="" name="date" type="date">
+								</div>
+							</div>
+							<div class="am-form-group">
+								<label for="user-name" class="am-u-sm-3 am-form-label">
+									业绩报告
+								</label>
+								<div class=" " style="position: absolute;right: 110px;top:127px;">
+									<textarea id="content" cols="30" rows="8" required="" placeholder="业绩报告" value="" name="content" type="text" ></textarea>
+								</div>
+							</div>
+
+							<div class="am-form-group">
+								<div class="" style="position: absolute; left:130px;top:306px;">
+								    <input type="hidden" name="action" value="insert">
+									<input id="addRole" class="am-btn am-btn-success" value="修改业绩报告" type="submit">
+								    <input class="am-btn am-btn-success"  type="reset" name="reset" value="重置">
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

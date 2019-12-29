@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		
+		<link rel="stylesheet" href="css/amazeui.min.css">
+		<link rel="stylesheet" href="css/admin.css">
+		<link rel="stylesheet" href="css/app.css">
+		<style>
+			.admin-main{
+				padding-top: 0px;
+			}
+		</style>
+	</head>
+	<body>
+		
+		<div class="am-cf admin-main">
+			<!-- content start -->
+			<div class="admin-content">
+				<div class="admin-content-body">
+					<div class="am-g">
+						<form class="am-form am-form-horizontal" action="alterProject.php" method="post" >
+							<input value="504" name="roleId" type="hidden">
+							<div class="am-form-group">
+								<label for="user-name" class="am-u-sm-3 am-form-label">
+									确认编号
+								</label>
+								<div class=" " style="position: absolute;right: 180px;top:7px;">
+									<input id="id" placeholder="输入要修改的项目编号" value="" name="id" type="text">
+									
+								</div>
+							</div>
+							<div class="am-form-group">
+								<label for="user-name" class="am-u-sm-3 am-form-label">
+									项目编号
+								</label>
+								<div class=" " style="position: absolute;right: 180px;top:57px;">
+									<input id="projectNo" placeholder="输入项目编号" value="" name="projectNo" type="text">
+									
+								</div>
+							</div>
+							<div class="am-form-group">
+								<label for="user-name" class="am-u-sm-3 am-form-label">
+									项目名称
+								</label>
+								<div class=" " style="position: absolute;right: 180px;top:106px;">
+									<input id="projectName" placeholder="输入项目名称" value="" name="projectName" type="text">
+								
+								</div>
+							</div>
+							<div class="am-form-group">
+								<label for="user-name" class="am-u-sm-3 am-form-label">
+									经费预算
+								</label>
+								<div class=" " style="position: absolute;right: 180px;top:156px;">
+									<input id="projectBudget" required="" placeholder="输入经费预算" value="" name="projectBudget" type="text">
+									
+								</div>
+							</div>
+							<div class="am-form-group">
+								<label for="user-name" class="am-u-sm-3 am-form-label">
+									进度
+								</label>
+								<div class=" " style="position: absolute;right: 180px;top:206px;">
+									<input id="partProgress" required="" placeholder="输入项目进度" value="" name="partProgress" type="text">
+									
+								</div>
+							</div>
+							<div class="am-form-group">
+								<label for="user-name" class="am-u-sm-3 am-form-label">
+									截止日期
+								</label>
+								<div class=" " style="position: absolute;right: 162px;top:256px;">
+									<input name="projectDeadline" type="date" value="2018-06-02" style="height: 20px;width: 226px;"/>
+								</div>
+							</div>
+							<div class="am-form-group">
+								<div class="" style="position: absolute; left:130px;top:306px;">
+								    <input type="hidden" name="action" value="insert">
+									<input id="addRole" class="am-btn am-btn-success" value="修改甲方" type="submit">
+								    <input class="am-btn am-btn-success"  type="reset" name="reset" value="重置">
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		
+		<link rel="stylesheet" href="css/amazeui.min.css">
+		<link rel="stylesheet" href="css/admin.css">
+		<link rel="stylesheet" href="css/app.css">
+		<style>
+			.admin-main{
+				padding-top: 0px;
+			}
+		</style>
+	</head>
+	<body>
+		
+		<div class="am-cf admin-main">
+			<!-- content start -->
+			<div class="admin-content">
+				<div class="admin-content-body">
+					<div class="am-g">
+						<form class="am-form am-form-horizontal" action="alterPart.php" method="post" >
+							<input value="504" name="roleId" type="hidden">
+							<div class="am-form-group">
+								<label for="user-name" class="am-u-sm-3 am-form-label">
+									确认编号
+								</label>
+								<div class=" " style="position: absolute;right: 180px;top:7px;">
+									<input id="id" placeholder="输入要修改的甲方编号" value="" name="id" type="text">
+									
+								</div>
+							</div>							
+							<div class="am-form-group">
+								<label for="user-name" class="am-u-sm-3 am-form-label">
+									甲方编号
+								</label>
+								<div class=" " style="position: absolute;right: 180px;top:57px;">
+									<input id="partNo" placeholder="输入甲方编号" value="" name="partNo" type="text">
+									
+								</div>
+							</div>
+							<div class="am-form-group">
+								<label for="user-name" class="am-u-sm-3 am-form-label">
+									甲方名称
+								</label>
+								<div class=" " style="position: absolute;right: 180px;top:106px;">
+									<input id="partName" placeholder="输入甲方名称" value="" name="partName" type="text">
+								
+								</div>
+							</div>
+							<div class="am-form-group">
+								<label for="user-name" class="am-u-sm-3 am-form-label">
+									项目名称
+								</label>
+								<div class=" " style="position:absolute;right:162px;top:156px;">
+									<select name="partProject" style="width:243px;">
+                                    <option value ="1">游戏开发</option>
+  									<option value ="2">App开发</option>
+  									<option value ="3">VR开发</option>
+									</select>
+								</div>
+							</div>
+							<div class="am-form-group">
+								<label for="user-name" class="am-u-sm-3 am-form-label">
+									甲方电话
+								</label>
+								<div class=" " style="position: absolute;right: 180px;top:206px;">
+									<input id="partPhone" required="" placeholder="输入甲方电话" value="" name="partPhone" type="text">
+									
+								</div>
+							</div>
+							<div class="am-form-group">
+								<label for="user-name" class="am-u-sm-3 am-form-label">
+									甲方地址
+								</label>
+								<div class=" " style="position: absolute;right: 180px;top:256px;">
+									<input id="partAddress" required="" placeholder="输入甲方地址" value="" name="partAddress" type="text">
+									
+								</div>
+							</div>
+							<div class="am-form-group">
+								<div class="" style="position: absolute; left:130px;top:306px;">
+								    <input type="hidden" name="action" value="insert">
+									<input id="addRole" class="am-btn am-btn-success" value="修改甲方" type="submit">
+								    <input class="am-btn am-btn-success"  type="reset" name="reset" value="重置">
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

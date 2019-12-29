@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		
+		<link rel="stylesheet" href="css/amazeui.min.css">
+		<link rel="stylesheet" href="css/admin.css">
+		<link rel="stylesheet" href="css/app.css">
+		<style>
+			.admin-main{
+				padding-top: 0px;
+			}
+		</style>
+	</head>
+	<body>
+		
+		<div class="am-cf admin-main">
+			<!-- content start -->
+			<div class="admin-content">
+				<div class="admin-content-body">
+					<div class="am-g">
+						<form class="am-form am-form-horizontal" action="addDepart_ok.php" method="post" >
+							<input value="504" name="roleId" type="hidden">
+							<div class="am-form-group">
+								<label for="user-name" class="am-u-sm-3 am-form-label">
+									部门编号
+								</label>
+								<div class=" " style="position: absolute;right: 180px;top:7px;">
+									<input id="departNo" placeholder="输入部门编号" value="" name="departNo" type="text">
+									
+								</div>
+							</div>
+							<div class="am-form-group">
+								<label for="user-name" class="am-u-sm-3 am-form-label">
+									部门名称
+								</label>
+								<div class=" " style="position: absolute;right: 180px;top:56px;">
+									<input id="departName" placeholder="输入部门名称" value="" name="departName" type="text">
+								
+								</div>
+							</div>
+							<div class="am-form-group">
+								<label for="user-name" class="am-u-sm-3 am-form-label">
+									部门电话
+								</label>
+								<div class=" " style="position: absolute;right: 180px;top:106px;">
+									<input id="departPhone" required="" placeholder="输入部门电话" value="" name="departPhone" type="text">
+									
+								</div>
+							</div>
+							<div class="am-form-group">
+								<div class="" style="position: absolute; left:130px;top:180px;">
+								    <input type="hidden" name="action" value="insert">
+									<input id="addRole" class="am-btn am-btn-success" value="添加部门" type="submit">
+								    <input class="am-btn am-btn-success"  type="reset" name="reset" value="重置">
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
