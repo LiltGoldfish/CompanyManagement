@@ -15,20 +15,20 @@ PHP＋Mysql+Apache服务器
 1. 员工之间的互相通信
 2. 业绩报告
 ## 部分设计 ##
-1. 系统功能结构图
+1. 系统功能结构图</br>
 ![avatar](design/Function.png)
-2. ER图
+2. ER图</br>
 ![avatar](design/MyER.png)
 ## 系统展示 ##
-1. 登陆界面
+1. 登陆界面</br>
 ![avatar](design/login.png)
-2. 注册界面
+2. 注册界面</br>
 ![avatar](design/register.png)
-3. 登陆后操作主页
+3. 登陆后操作主页</br>
 ![avatar](design/home.png)
-4. 添加操作
+4. 添加操作</br>
 ![avatar](design/add.png)
-5. 权限管理
+5. 权限管理</br>
 ![avatar](design/role.png)
 ## Thanks ##
 Thanks for the suggestion of improvement
